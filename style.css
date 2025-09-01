@@ -1,0 +1,180 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container principal (geral) */
+.geral {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Coluna esquerda (azul) */
+.left {
+    background-color: #1a428a;
+    color: #fff;
+    padding: 40px 20px;
+    flex: 0 0 35%; /* Ocupa 35% do espaço */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.left .img-perfil img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.left .img-perfil h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.left .img-perfil p {
+    font-size: 1em;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.left .contato h3,
+.left .formacao h3 {
+    width: 100%;
+    padding: 15px 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo levemente transparente */
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.left .contato p,
+.left .formacao p {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.left .contato,
+.left .formacao {
+    width: 100%;
+    padding: 0 10px;
+}
+
+/* Coluna direita (branca) */
+.right {
+    background-color: #fff;
+    padding: 40px;
+    flex: 1; /* Ocupa todo o espaço restante */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right .sobre h2,
+.right .competencia h2,
+.right .projetos h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.right .sobre p {
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+.right .experiencia {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.right .experiencia .ano {
+    font-weight: bold;
+    color: #fff; /* Cor do texto dentro do background */
+    font-size: 1.1em;
+    background-color: #1a428a; /* Cor de fundo adicionada */
+    padding: 5px 10px; /* Preenchimento para o background */
+    border-radius: 5px; /* Bordas arredondadas para o background */
+    align-self: flex-start; /* Alinha o item ao início do contêiner flex */
+    white-space: nowrap; /* Impede que o texto quebre a linha */
+}
+
+.right .competencia ul {
+    list-style: none;
+    font-size: 1em;
+}
+
+.right .competencia li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.right .projetos .lista-projetos {
+    display: flex;
+    gap: 20px;
+}
+
+.right .projetos .projeto {
+    background-color: #f0f2f5;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.right .projetos .projeto h3 {
+    font-size: 1.1em;
+    color: #1a428a;
+    margin-bottom: 5px;
+}
+
+.right .projetos .projeto p {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Responsividade (opcional) */
+@media (max-width: 768px) {
+    .geral {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .left {
+        flex: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .right {
+        padding: 20px;
+    }
+
+    .right .projetos .lista-projetos {
+        flex-direction: column;
+    }
+
+    .right .projetos .projeto {
+        width: 100%;
+    }
+}
