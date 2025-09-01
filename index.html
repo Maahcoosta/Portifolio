@@ -1,94 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <title>Currículo do Robôzinho</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Responsivo Completo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <h1>MEU SITE RESPONSIVO</h1>
+    </header>
 
-  <section>
-    <div class="geral">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Depoimentos</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
 
-      <!-- COLUNA ESQUERDA -->
-      <div class="left">
-        <div class="img-perfil">
-          <img src="imagem.webp" alt="Foto do Robôzinho" width="120">
-          <h2>Robôzinho</h2>
-          <p>Desenvolvedor de Sistemas</p>
-        </div>
+    <main>
+        <section>
+            <h2 class="msg-desktop">👨‍💻 Bem-vindo à versão Desktop!</h2>
+            <h2 class="msg-mobile">📱 Bem-vindo à versão Mobile!</h2>
+            <p>Este é um exemplo de site responsivo utilizando <b>flexbox</b> e <b>@media query</b>.</p>
+        </section>
 
-        <div class="contato">
-          <h3>Contato</h3>
-          <p>📧 robozinho3000@futuro.com</p>
-          <p>📱 +55 (77) 90000-0000</p>
-          <p>📍 Laboratório de Inovação - SENAI</p>
-        </div>
-
-        <div class="formacao">
-          <h3>Formação</h3>
-          <p>🎓 Curso Técnico em </p>
-          <p>📅 Atualização constante (versão 3.0)</p>
-        </div>
-      </div>
-
-      <!-- COLUNA DIREITA -->
-      <div class="right">
-
-        <div class="sobre">
-          <h2>Sobre Mim</h2>
-          <p>Sou o Robôzinho 3000, programado para aprender rápido, ajudar pessoas e organizar informações.
-            Meu objetivo é apoiar humanos em tarefas do dia a dia com eficiência e simpatia 🤖✨.</p>
-        </div>
-
-        <div class="experiencia">
-          <div class="ano">2023</div>
-          <div class="texto">
-            <h3>Estagiário em Indústria 4.0</h3>
-            <p>Auxiliei no controle de máquinas inteligentes, automação de processos e análise de dados em tempo real.
-            </p>
-          </div>
-        </div>
-
-        <div class="experiencia">
-          <div class="ano">2024</div>
-          <div class="texto">
-            <h3>Assistente Virtual</h3>
-            <p>Atendi usuários em plataformas digitais, respondi perguntas e organizei relatórios automáticos.</p>
-          </div>
-        </div>
-
-        <div class="competencia">
-          <h2>Competências</h2>
-          <ul>
-            <li>✅ Processamento de Dados</li>
-            <li>✅ Organização Digital</li>
-            <li>✅ Trabalho em Rede</li>
-            <li>✅ Comunicação via Chat</li>
-            <li>✅ Energia Sustentável (bateria recarregável 🔋)</li>
-          </ul>
-        </div>
-
-        <div class="projetos">
-          <h2>Projetos</h2>
-          <div class="lista-projetos">
-            <div class="projeto">
-              <h3>⚡ Robô Entregador</h3>
-              <p>Desenvolvimento de protótipo para entregas autônomas dentro da escola.</p>
+        <section class="sobre">
+            <div class="sobre-texto">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma equipe apaixonada por tecnologia e design responsivo. Nosso objetivo é criar interfaces simples, bonitas e acessíveis em qualquer dispositivo.</p>
             </div>
-            <div class="projeto">
-              <h3>🌐 Chat Inteligente</h3>
-              <p>Criação de um sistema de conversação para auxiliar alunos em pesquisas e estudos.</p>
-            </div>
-          </div>
-        </div>
+            <div class="sobre-img"></div>
+        </section>
 
-      </div>
-    </div>
-  </section>
+        <section class="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="cards">
+                <div class="card">💻 Desenvolvimento Web</div>
+                <div class="card">📱 Aplicativos Mobile</div>
+                <div class="card">🎨 Design Responsivo</div>
+            </div>
+        </section>
+
+        <section class="depoimentos">
+            <h2>O que dizem nossos clientes</h2>
+            <div class="depoimentos-flex">
+                <div class="depoimento">"Excelente atendimento e qualidade!"</div>
+                <div class="depoimento">"O site ficou lindo e super rápido."</div>
+                <div class="depoimento">"Recomendo para qualquer empresa."</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Galeria de Blocos</h2>
+            <div class="flex">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+        </section>
+
+        <section class="noticias">
+            <h2>Últimas Notícias</h2>
+            <div class="noticias-grid">
+                <div class="noticia">Notícia 1 - Responsividade é essencial em 2024</div>
+                <div class="noticia">Notícia 2 - CSS @media query explicado</div>
+                <div class="noticia">Notícia 3 - Design minimalista em alta</div>
+            </div>
+        </section>
+
+        <section class="contato">
+            <h2>Entre em Contato</h2>
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Meu Site Responsivo </p>
+    </footer>
 </body>
-
 </html>
